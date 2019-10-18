@@ -1,0 +1,104 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "flex-custom-menu-ac-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/flexCustomMenuAc/FlexCustomMenuAcApplicationCustomizer.js",
+          "manifest": "./src/extensions/flexCustomMenuAc/FlexCustomMenuAcApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals":
+  {
+    "jquery":"node_modules/jquery/dist/jquery.min.js",
+    "jqueryui":"node_modules/jqueryui/jquery-ui.min.js",
+    "sp-init":
+    {
+      "path": "https://flextronics365.sharepoint.com/_layouts/15/init.js",
+      "globalName": "$_global_init"
+    },
+    "microsoft-ajax": 
+    {
+      "path": "https://flextronics365.sharepoint.com/_layouts/15/MicrosoftAjax.js",
+      "globalName": "Sys",
+      "globalDependencies": [
+        "sp-init"
+      ]
+    },
+    "sp-runtime":
+    {
+      "path": "https://flextronics365.sharepoint.com/_layouts/15/SP.Runtime.js",
+      "globalName": "SP",
+      "globalDependencies": [
+        "microsoft-ajax"
+      ]
+    },
+    "sharepoint": 
+    {
+      "path": "https://flextronics365.sharepoint.com/_layouts/15/SP.js",
+      "globalName": "SP",
+      "globalDependencies": [
+        "sp-runtime"
+      ]
+    }
+  },
+  "localizedResources": {
+    "FlexCustomMenuAcApplicationCustomizerStrings": "lib/extensions/flexCustomMenuAc/loc/{locale}.js"
+  }
+}
+
+
+// {
+//   "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+//   "version": "2.0",
+//   "bundles": {
+//     "flex-custom-menu-ac-application-customizer": {
+//       "components": [
+//         {
+//           "entrypoint": "./lib/extensions/flexCustomMenuAc/FlexCustomMenuAcApplicationCustomizer.js",
+//           "manifest": "./src/extensions/flexCustomMenuAc/FlexCustomMenuAcApplicationCustomizer.manifest.json"
+//         }
+//       ]
+//     }
+//   },
+//   "externals":
+//   {
+//     "jquery":"node_modules/jquery/dist/jquery.min.js",
+//     "jqueryui":"node_modules/jqueryui/jquery-ui.min.js",
+//     "sp-init":
+//     {
+//       "path": "https://stgflextronics365.sharepoint.com/_layouts/15/init.js",
+//       "globalName": "$_global_init"
+//     },
+//     "microsoft-ajax": 
+//     {
+//       "path": "https://stgflextronics365.sharepoint.com/_layouts/15/MicrosoftAjax.js",
+//       "globalName": "Sys",
+//       "globalDependencies": [
+//         "sp-init"
+//       ]
+//     },
+//     "sp-runtime":
+//     {
+//       "path": "https://stgflextronics365.sharepoint.com/_layouts/15/SP.Runtime.js",
+//       "globalName": "SP",
+//       "globalDependencies": [
+//         "microsoft-ajax"
+//       ]
+//     },
+//     "sharepoint": 
+//     {
+//       "path": "https://stgflextronics365.sharepoint.com/_layouts/15/SP.js",
+//       "globalName": "SP",
+//       "globalDependencies": [
+//         "sp-runtime"
+//       ]
+//     }
+//   },
+//   "localizedResources": {
+//     "FlexCustomMenuAcApplicationCustomizerStrings": "lib/extensions/flexCustomMenuAc/loc/{locale}.js"
+//   }
+// }

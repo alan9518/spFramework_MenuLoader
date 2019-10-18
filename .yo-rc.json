@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.0",
+    "libraryName": "flex-custom-menu",
+    "libraryId": "055102d4-f4ac-4bd5-9b90-3597752c7fce",
+    "environment": "spo"
+  }
+}

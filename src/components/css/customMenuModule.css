@@ -1,0 +1,505 @@
+
+/* 
+SharePoint  fix
+*/
+
+.o365cs-base .o365cs-topnavText, .o365cs-base .o365cs-topnavText:hover {
+  color: #009add;
+  line-height: 2px;
+}
+
+#O365_NavHeader > div.o365cs-nav-leftAlign > div.o365cs-nav-topItem.o365cs-nav-o365Branding > div{
+  margin-left: 15em;
+}
+#corp{
+width:11em;
+}
+#corp a{
+width:11em !important;
+}
+#busg{
+ width:27em;
+}
+#dep{
+width:40em;
+}
+#mainbutton img{
+padding-top:4px;
+}
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {	
+background-image:url("https://flextronics365.sharepoint.com/sites/FlexSettings/Style%20%Library/flexBrand/img/white-arrow-dropdown.png") !important;
+}
+.dynamic  span.menu-item-text{
+color:black !important;
+}
+.dynamic  span.menu-item-text:hover{
+color:#009add !important;
+cursor:pointer;
+}
+
+
+/*////////////////////////////
+menu
+
+ */
+
+@font-face {
+    font-family: ITCAvantGardeStdBold;
+    src: url("https://stgflextronics365.sharepoint.com/sites/alan/SiteAssets/fonts/ITCAvantGardeStd-Bold.woff");
+}
+@font-face {
+    font-family: ITCAvantGardeStdMid;
+    src: url("https://flextronics365.sharepoint.com/sites/FlexSettings/Style%20Library/flexBrand/Fonts/ITCAvantGardeStd-Md.woff");
+}
+.clear{ clear:both;}
+
+
+#cssmenu{
+    font-family: ITCAvantGardeStdBold !important;
+ margin-top: -0.4em;
+}
+#cssmenu ul{
+margin-left: 3em;
+}
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: ITCAvantGardeStdBold !important;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+ 
+  line-height: 1;
+  background: #000000;
+  width: auto;
+}
+#menu-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #000;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right ul ul {
+  text-align: right;
+}
+#cssmenu > ul > li > a {
+  padding: 20px;
+  font-size: 14px;
+  
+  text-decoration: none;
+ 
+  color: #ffffff;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #009ae1;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 25px;
+}
+#cssmenu > ul > li.has-sub > a::after {
+  position: absolute;
+  top: 21px;
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  content: "";
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -ms-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+#cssmenu > ul > li.has-sub:hover > a::after {
+  border-color: #009ae1;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  background:#000;
+}
+#cssmenu li:hover > ul {
+  left: auto;
+}
+#cssmenu.align-right li:hover > ul {
+  right: 0;
+}
+#cssmenu ul ul ul {
+  margin-left: 100%;
+  top: 0;
+}
+#cssmenu.align-right ul ul ul {
+  margin-left: 0;
+  margin-right: 100%;
+}
+#cssmenu ul ul li {
+  height: 0;
+  -webkit-transition: height .2s ease;
+  -moz-transition: height .2s ease;
+  -ms-transition: height .2s ease;
+  -o-transition: height .2s ease;
+  transition: height .2s ease;
+}
+
+#cssmenu ul ul li.deskcol {
+  height: 0;
+
+  width:700px;
+  -webkit-transition: height .2s ease;
+  -moz-transition: height .2s ease;
+  -ms-transition: height .2s ease;
+  -o-transition: height .2s ease;
+  transition: height .2s ease;
+}
+
+#cssmenu ul li:hover > ul > li {
+  height: 40px;
+}
+
+#cssmenu ul li:hover > ul > li.deskcol {
+  height: 40px;
+}
+
+
+
+#cssmenu ul ul li a {
+    display:block;
+  padding: 10px 20px;
+  font-family:ITCAvantGardeStd-Bold;
+  width: 250px;
+  font-size: 12px;
+  
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  line-height:16px;
+}
+
+#cssmenu ul ul li a.cols {
+    display:block;
+  padding: 10px;
+  font-family:ITCAvantGardeStd-Bold;
+  width: 325px;
+  float:left;
+  font-size: 12px;
+  
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  line-height:16px;
+}
+
+
+
+
+
+#cssmenu ul ul li a:hover {
+  color: #009ae1;
+}
+#cssmenu ul ul li.has-sub > a::after {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  content: "";
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease;
+  -ms-transition: border-color 0.2s ease;
+  -o-transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease;
+}
+#cssmenu.align-right ul ul li.has-sub > a::after {
+  right: auto;
+  left: 10px;
+  border-bottom: 0;
+  border-right: 0;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+#cssmenu ul ul li.has-sub:hover > a::after {
+  border-color: #009ae1;
+}
+#cssmenu.small-screen {
+  width: 100%;
+}
+#cssmenu.small-screen ul {
+  width: 100%;
+  display: none;
+}
+#cssmenu.small-screen.align-center > ul,
+#cssmenu.small-screen.align-right ul ul {
+  text-align: left;
+}
+#cssmenu.small-screen ul li,
+#cssmenu.small-screen ul ul li,
+#cssmenu.small-screen ul li:hover > ul > li {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid rgba(120, 120, 120, 0.15);
+}
+#cssmenu.small-screen ul li a,
+#cssmenu.small-screen ul ul li a {
+  width: 100%;
+}
+#cssmenu.small-screen > ul > li,
+#cssmenu.small-screen.align-center > ul > li,
+#cssmenu.small-screen.align-right > ul > li {
+  float: none;
+  display: block;
+}
+#cssmenu.small-screen ul ul li a {
+  padding: 20px 20px 20px 30px;
+  font-size: 12px;
+  color: #ffffff;
+  background: none;
+}
+#cssmenu.small-screen ul ul li:hover > a,
+#cssmenu.small-screen ul ul li a:hover {
+  color: #ffffff;
+}
+#cssmenu.small-screen ul ul ul li a {
+  padding-left: 40px;
+}
+#cssmenu.small-screen ul ul,
+#cssmenu.small-screen ul ul ul {
+  position: relative;
+  left: 0;
+  right: auto;
+  width: 100%;
+  margin: 0;
+}
+#cssmenu.small-screen > ul > li.has-sub > a::after,
+#cssmenu.small-screen ul ul li.has-sub > a::after {
+  display: none;
+}
+#cssmenu.small-screen #menu-line {
+  display: none;
+}
+#cssmenu.small-screen #menu-button {
+  display: block;
+  padding: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+#cssmenu.small-screen #menu-button::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 15px;
+  height: 2px;
+  background: #ffffff;
+}
+#cssmenu.small-screen #menu-button::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  display: block;
+  width: 15px;
+  height: 3px;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+#cssmenu.small-screen .submenu-button {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  display: block;
+  border-left: 1px solid rgba(120, 120, 120, 0.15);
+  height: 52px;
+  width: 52px;
+  cursor: pointer;
+}
+#cssmenu.small-screen .submenu-button::after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 26px;
+  display: block;
+  width: 1px;
+  height: 11px;
+  background: #ffffff;
+  z-index: 99;
+}
+#cssmenu.small-screen .submenu-button::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 26px;
+  display: block;
+  width: 11px;
+  height: 1px;
+  background: #ffffff;
+  z-index: 99;
+}
+#cssmenu.small-screen .submenu-button.submenu-opened:after {
+  display: none;
+}
+#cssmenu.small-screen.select-list {
+  padding: 5px;
+}
+
+
+
+/*
+  --------------------------------
+  styles for Modern Sites
+  --------------------------------
+*/
+img#O365_MainLink_TenantLogoImg {
+  display: none;
+}
+
+.ac-policyImg{
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.ac-policyButton{
+  line-height:3;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+button#opendg_topnav {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Update Modal JQuery UI */
+
+.ui-dialog {
+  -webkit-font-smoothing: antialiased;
+  z-index: 2000;
+}
+
+
+#modalRetention {
+  background-color: #fff;
+}
+
+.ui-widget-content {
+  border: none;
+}
+
+
+.ui-dialog-titlebar {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.ui-dialog-title {
+  font-family: "ITC Avant Garde Gothic Medium","Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+  font-size: 1.66em;
+  color: #444444;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.ui-widget-content {
+  border: none;
+}
+
+
+.ui-dialog-content p {
+  font-size: 1.75em;
+  text-rendering: optimizeLegibility;
+}
+
+
+button.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  background-color: transparent;
+  border: none !important;
+  cursor: pointer;
+}
+
+
+.ui-dialog {
+  border: 1px solid #c6c6c6 !important;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.47);
+}
+

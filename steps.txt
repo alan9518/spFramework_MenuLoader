@@ -1,0 +1,48 @@
+################################
+Steps Creating The App
+################################
+
+################################
+References
+    https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/add-jqueryui-accordion-to-web-part
+    https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/connect-to-sharepoint-using-jsom
+################################
+
+Lock Packages Versions
+    npm shrinkwrap
+
+
+1. Install JQuery on App Side
+    npm install --save jquery@2
+    npm install --save @types/jquery@2
+
+    npm install --save @types/jquery@2
+    npm install --save @types/jqueryui
+
+2. Unbundle external dependencies from web part bundle
+    Add External Reference to config\config.json.
+
+3. Install dependencies to Connect to SharePoint using the JavaScript Object Model (JSOM)
+    Add External Reference to config\config.json.
+
+    SharePoint JSOM is not distributed as a module, so you cannot import it directly in your code. 
+    Instead, you need to register its TypeScript typings globally.
+        npm install @types/microsoft-ajax @types/sharepoint --save-dev
+
+    In the code editor, open the ./tsconfig.json file, and in the types property, right after the webpack-env entry,
+    add references to microsoft-ajax and sharepoint
+
+        "types": [
+            "es6-promise",
+            "webpack-env",
+            "microsoft-ajax",
+            "sharepoint"
+        ]
+
+4. RUN
+    gulp serve --nobrowser
+
+
+
+    Minify and SourceMap
+    uglifyjs ./dist/dist/bundle.js -c -m -o ./dist/dist/bundle.min.js --source-map
